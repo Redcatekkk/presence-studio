@@ -299,7 +299,7 @@ mod tests {
             details: "Building a portfolio project".to_string(),
             state: "Editing custom RPC".to_string(),
             large_image_key: "presence-studio".to_string(),
-            small_image_key: "typescript".to_string(),
+            small_image_key: "presence-studio-badge".to_string(),
             button_one_label: "GitHub".to_string(),
             button_one_url: "https://github.com/redca".to_string(),
             button_two_label: "Portfolio".to_string(),

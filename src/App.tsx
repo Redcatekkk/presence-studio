@@ -98,7 +98,7 @@ const presetValues: Record<Preset, Partial<FormState>> = {
     details: 'Building a portfolio project',
     state: 'Editing custom RPC',
     largeImage: 'presence-studio',
-    smallImage: 'typescript',
+    smallImage: 'presence-studio-badge',
     buttonOneLabel: 'GitHub',
     buttonTwoLabel: 'Portfolio',
   },
@@ -126,7 +126,7 @@ const initialForm: FormState = {
   details: 'Building a portfolio project',
   state: 'Editing custom RPC',
   largeImage: 'presence-studio',
-  smallImage: 'typescript',
+  smallImage: 'presence-studio-badge',
   buttonOneLabel: 'GitHub',
   buttonOneUrl: 'https://github.com/redca',
   buttonTwoLabel: 'Portfolio',
@@ -816,7 +816,7 @@ function EditorPanel({
           <InputField label="Large image key" value={form.largeImage} onChange={(value) => onFieldChange('largeImage', value)} placeholder="presence-studio" icon={ImageIcon} />
           <InputField label="Details" value={form.details} onChange={(value) => onFieldChange('details', value)} placeholder="Building a portfolio project" icon={Terminal} />
           <InputField label="State" value={form.state} onChange={(value) => onFieldChange('state', value)} placeholder="Editing custom RPC" icon={RadioTower} />
-          <InputField label="Small image key" value={form.smallImage} onChange={(value) => onFieldChange('smallImage', value)} placeholder="typescript" icon={Code2} />
+          <InputField label="Small image key" value={form.smallImage} onChange={(value) => onFieldChange('smallImage', value)} placeholder="presence-studio-badge" icon={Code2} />
           <div className="grid gap-3 sm:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
             <InputField label="Button 1 label" value={form.buttonOneLabel} onChange={(value) => onFieldChange('buttonOneLabel', value)} placeholder="GitHub" />
             <InputField label="Button 1 URL" value={form.buttonOneUrl} onChange={(value) => onFieldChange('buttonOneUrl', value)} placeholder="https://" />

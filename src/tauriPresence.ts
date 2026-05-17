@@ -71,7 +71,7 @@ const defaultPayload: PresenceCommandPayload = {
   details: 'Building a portfolio project',
   state: 'Editing custom RPC',
   largeImageKey: 'presence-studio',
-  smallImageKey: 'typescript',
+  smallImageKey: 'presence-studio-badge',
   buttonOneLabel: 'GitHub',
   buttonOneUrl: 'https://github.com/redca',
   buttonTwoLabel: 'Portfolio',
@@ -115,9 +115,12 @@ let localProfiles: PresenceProfile[] = [
   },
 ]
 
+const defaultLargeArtwork = '/rpc/presence-studio.png'
+const defaultSmallArtwork = '/rpc/presence-studio-badge.png'
+
 let localAssets: AssetItem[] = [
-  { id: 'asset-presence-studio', key: 'presence-studio', kind: 'Large image', tone: 'Purple core', previewDataUrl: null },
-  { id: 'asset-typescript', key: 'typescript', kind: 'Small image', tone: 'Blue signal', previewDataUrl: null },
+  { id: 'asset-presence-studio', key: 'presence-studio', kind: 'Large image', tone: 'Purple core', previewDataUrl: defaultLargeArtwork },
+  { id: 'asset-presence-studio-badge', key: 'presence-studio-badge', kind: 'Small image', tone: 'Violet badge', previewDataUrl: defaultSmallArtwork },
   { id: 'asset-arena-core', key: 'arena-core', kind: 'Large image', tone: 'Indigo arena', previewDataUrl: null },
   { id: 'asset-spark', key: 'spark', kind: 'Small image', tone: 'Violet spark', previewDataUrl: null },
 ]
