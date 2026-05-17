@@ -67,7 +67,7 @@ export const supportedTransports = ['Local IPC', 'Mock transport', 'Disabled'] a
 const isTauriRuntime = () => Boolean('__TAURI_INTERNALS__' in window)
 
 const defaultPayload: PresenceCommandPayload = {
-  clientId: '1249029374529826816',
+  clientId: '1505379098929791127',
   details: 'Building a portfolio project',
   state: 'Editing custom RPC',
   largeImageKey: 'presence-studio',

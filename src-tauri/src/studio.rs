@@ -333,7 +333,7 @@ fn seed_payload(
     small_image_key: &str,
 ) -> PresencePayload {
     PresencePayload {
-        client_id: "1249029374529826816".to_string(),
+        client_id: "1505379098929791127".to_string(),
         details: details.to_string(),
         state: state.to_string(),
         large_image_key: large_image_key.to_string(),
@@ -459,7 +459,7 @@ mod tests {
 
     fn payload(details: &str) -> PresencePayload {
         PresencePayload {
-            client_id: "1249029374529826816".to_string(),
+            client_id: "1505379098929791127".to_string(),
             details: details.to_string(),
         state: "Editing custom RPC".to_string(),
         large_image_key: "presence-studio".to_string(),

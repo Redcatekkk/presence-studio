@@ -295,7 +295,7 @@ mod tests {
 
     fn valid_payload() -> PresencePayload {
         PresencePayload {
-            client_id: "1249029374529826816".to_string(),
+            client_id: "1505379098929791127".to_string(),
             details: "Building a portfolio project".to_string(),
             state: "Editing custom RPC".to_string(),
             large_image_key: "presence-studio".to_string(),
@@ -319,7 +319,7 @@ mod tests {
             .expect("valid payload should start");
 
         assert!(session.running);
-        assert_eq!(session.client_id, "1249029374529826816");
+        assert_eq!(session.client_id, "1505379098929791127");
         assert_eq!(session.details, "Building a portfolio project");
         assert_eq!(session.state, "Editing custom RPC");
         assert_eq!(session.activity_label, "Playing Presence Studio");
