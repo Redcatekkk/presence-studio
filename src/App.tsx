@@ -95,12 +95,12 @@ const initialSpotlight = { x: 68, y: 24 }
 
 const presetValues: Record<Preset, Partial<FormState>> = {
   Coding: {
-    details: 'Building a portfolio project',
-    state: 'Editing custom RPC',
+    details: 'Want a custom RPC?',
+    state: 'Go check out my github',
     largeImage: 'presence-studio',
-    smallImage: 'presence-studio-badge',
-    buttonOneLabel: 'GitHub',
-    buttonTwoLabel: 'Portfolio',
+    smallImage: 'cordtools-icon',
+    buttonOneLabel: 'Github link',
+    buttonTwoLabel: 'CordTools link',
   },
   Gaming: {
     details: 'Tuning the neon loadout',
@@ -123,14 +123,14 @@ const presetValues: Record<Preset, Partial<FormState>> = {
 
 const initialForm: FormState = {
   clientId: '1505379098929791127',
-  details: 'Building a portfolio project',
-  state: 'Editing custom RPC',
+  details: 'Want a custom RPC?',
+  state: 'Go check out my github',
   largeImage: 'presence-studio',
-  smallImage: 'presence-studio-badge',
-  buttonOneLabel: 'GitHub',
-  buttonOneUrl: 'https://github.com/redca',
-  buttonTwoLabel: 'Portfolio',
-  buttonTwoUrl: 'https://redca.dev',
+  smallImage: 'cordtools-icon',
+  buttonOneLabel: 'Github link',
+  buttonOneUrl: 'https://github.com/redcatekkk',
+  buttonTwoLabel: 'CordTools link',
+  buttonTwoUrl: 'https://cordtools.online',
 }
 
 const initialSettings: StudioSettings = {
@@ -814,15 +814,15 @@ function EditorPanel({
         <div className="grid gap-3 sm:grid-cols-2">
           <InputField label="Client ID" value={form.clientId} onChange={(value) => onFieldChange('clientId', value)} placeholder="Discord application client ID" icon={Boxes} />
           <InputField label="Large image key" value={form.largeImage} onChange={(value) => onFieldChange('largeImage', value)} placeholder="presence-studio" icon={ImageIcon} />
-          <InputField label="Details" value={form.details} onChange={(value) => onFieldChange('details', value)} placeholder="Building a portfolio project" icon={Terminal} />
-          <InputField label="State" value={form.state} onChange={(value) => onFieldChange('state', value)} placeholder="Editing custom RPC" icon={RadioTower} />
-          <InputField label="Small image key" value={form.smallImage} onChange={(value) => onFieldChange('smallImage', value)} placeholder="presence-studio-badge" icon={Code2} />
+          <InputField label="Details" value={form.details} onChange={(value) => onFieldChange('details', value)} placeholder="Want a custom RPC?" icon={Terminal} />
+          <InputField label="State" value={form.state} onChange={(value) => onFieldChange('state', value)} placeholder="Go check out my github" icon={RadioTower} />
+          <InputField label="Small image key" value={form.smallImage} onChange={(value) => onFieldChange('smallImage', value)} placeholder="cordtools-icon" icon={Code2} />
           <div className="grid gap-3 sm:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
-            <InputField label="Button 1 label" value={form.buttonOneLabel} onChange={(value) => onFieldChange('buttonOneLabel', value)} placeholder="GitHub" />
+            <InputField label="Button 1 label" value={form.buttonOneLabel} onChange={(value) => onFieldChange('buttonOneLabel', value)} placeholder="Github link" />
             <InputField label="Button 1 URL" value={form.buttonOneUrl} onChange={(value) => onFieldChange('buttonOneUrl', value)} placeholder="https://" />
           </div>
           <div className="grid gap-3 sm:col-span-2 sm:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
-            <InputField label="Button 2 label" value={form.buttonTwoLabel} onChange={(value) => onFieldChange('buttonTwoLabel', value)} placeholder="Portfolio" />
+            <InputField label="Button 2 label" value={form.buttonTwoLabel} onChange={(value) => onFieldChange('buttonTwoLabel', value)} placeholder="CordTools link" />
             <InputField label="Button 2 URL" value={form.buttonTwoUrl} onChange={(value) => onFieldChange('buttonTwoUrl', value)} placeholder="https://" />
           </div>
         </div>
@@ -1324,8 +1324,8 @@ function DiscordCard({
         </div>
         <div className="min-w-0 flex-1 pt-1">
           <p className="truncate text-[13px] font-bold text-white">Presence Studio</p>
-          <p className="mt-1 truncate text-[12px] font-medium text-slate-200">{form.details || 'Building a portfolio project'}</p>
-          <p className="mt-1 truncate text-[12px] text-slate-300">{form.state || 'Editing custom RPC'}</p>
+          <p className="mt-1 truncate text-[12px] font-medium text-slate-200">{form.details || 'Want a custom RPC?'}</p>
+          <p className="mt-1 truncate text-[12px] text-slate-300">{form.state || 'Go check out my github'}</p>
           {showElapsed ? (
             <p className="mt-2 truncate text-[11px] text-slate-400">00:14 elapsed</p>
           ) : null}

@@ -8,7 +8,7 @@ Presence Studio is a Tauri, React, TypeScript, and Tailwind desktop app for desi
 - Real Discord IPC through an application Client ID when Discord desktop is running.
 - Mock transport for UI testing without connecting to Discord.
 - Local asset and avatar previews for the studio UI.
-- Bundled default RPC artwork in `public/rpc/presence-studio.png` and `public/rpc/presence-studio-badge.png`.
+- Bundled default RPC artwork in `public/rpc/presence-studio.png` and `public/rpc/cordtools-icon.png`.
 - Frontend and backend validation for Discord RPC constraints.
 - Launch at login, native notifications, tray hide/show controls, and live activity updates while a session is running.
 
@@ -19,7 +19,7 @@ Presence Studio does not use Discord user tokens and should not be extended to c
 Default Discord image keys:
 
 - Large image: `presence-studio`
-- Small image: `presence-studio-badge`
+- Small image: `cordtools-icon`
 
 Upload the bundled PNG files from `public/rpc` to the Discord Developer Portal using those exact keys so the real Discord card matches the in-app preview.
 

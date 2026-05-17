@@ -68,14 +68,14 @@ const isTauriRuntime = () => Boolean('__TAURI_INTERNALS__' in window)
 
 const defaultPayload: PresenceCommandPayload = {
   clientId: '1505379098929791127',
-  details: 'Building a portfolio project',
-  state: 'Editing custom RPC',
+  details: 'Want a custom RPC?',
+  state: 'Go check out my github',
   largeImageKey: 'presence-studio',
-  smallImageKey: 'presence-studio-badge',
-  buttonOneLabel: 'GitHub',
-  buttonOneUrl: 'https://github.com/redca',
-  buttonTwoLabel: 'Portfolio',
-  buttonTwoUrl: 'https://redca.dev',
+  smallImageKey: 'cordtools-icon',
+  buttonOneLabel: 'Github link',
+  buttonOneUrl: 'https://github.com/redcatekkk',
+  buttonTwoLabel: 'CordTools link',
+  buttonTwoUrl: 'https://cordtools.online',
   showElapsedTime: true,
   showButtons: true,
   autoReconnect: true,
@@ -116,11 +116,11 @@ let localProfiles: PresenceProfile[] = [
 ]
 
 const defaultLargeArtwork = '/rpc/presence-studio.png'
-const defaultSmallArtwork = '/rpc/presence-studio-badge.png'
+const defaultSmallArtwork = '/rpc/cordtools-icon.png'
 
 let localAssets: AssetItem[] = [
   { id: 'asset-presence-studio', key: 'presence-studio', kind: 'Large image', tone: 'Purple core', previewDataUrl: defaultLargeArtwork },
-  { id: 'asset-presence-studio-badge', key: 'presence-studio-badge', kind: 'Small image', tone: 'Violet badge', previewDataUrl: defaultSmallArtwork },
+  { id: 'asset-cordtools-icon', key: 'cordtools-icon', kind: 'Small image', tone: 'CordTools badge', previewDataUrl: defaultSmallArtwork },
   { id: 'asset-arena-core', key: 'arena-core', kind: 'Large image', tone: 'Indigo arena', previewDataUrl: null },
   { id: 'asset-spark', key: 'spark', kind: 'Small image', tone: 'Violet spark', previewDataUrl: null },
 ]

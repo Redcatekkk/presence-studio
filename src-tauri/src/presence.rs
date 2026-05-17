@@ -296,14 +296,14 @@ mod tests {
     fn valid_payload() -> PresencePayload {
         PresencePayload {
             client_id: "1505379098929791127".to_string(),
-            details: "Building a portfolio project".to_string(),
-            state: "Editing custom RPC".to_string(),
+            details: "Want a custom RPC?".to_string(),
+            state: "Go check out my github".to_string(),
             large_image_key: "presence-studio".to_string(),
-            small_image_key: "presence-studio-badge".to_string(),
-            button_one_label: "GitHub".to_string(),
-            button_one_url: "https://github.com/redca".to_string(),
-            button_two_label: "Portfolio".to_string(),
-            button_two_url: "https://redca.dev".to_string(),
+            small_image_key: "cordtools-icon".to_string(),
+            button_one_label: "Github link".to_string(),
+            button_one_url: "https://github.com/redcatekkk".to_string(),
+            button_two_label: "CordTools link".to_string(),
+            button_two_url: "https://cordtools.online".to_string(),
             show_elapsed_time: true,
             show_buttons: true,
             auto_reconnect: true,
@@ -320,8 +320,8 @@ mod tests {
 
         assert!(session.running);
         assert_eq!(session.client_id, "1505379098929791127");
-        assert_eq!(session.details, "Building a portfolio project");
-        assert_eq!(session.state, "Editing custom RPC");
+        assert_eq!(session.details, "Want a custom RPC?");
+        assert_eq!(session.state, "Go check out my github");
         assert_eq!(session.activity_label, "Playing Presence Studio");
         assert_eq!(session.transport, "Mock transport");
     }
@@ -368,7 +368,7 @@ mod tests {
     #[test]
     fn start_presence_rejects_invalid_button_url() {
         let mut payload = valid_payload();
-        payload.button_one_url = "github.com/redca".to_string();
+        payload.button_one_url = "github.com/redcatekkk".to_string();
 
         let mut runtime = PresenceRuntime::new();
         let error = runtime
@@ -390,11 +390,11 @@ mod tests {
         assert_eq!(buttons.len(), 2);
         assert_eq!(
             buttons[0].get("label").and_then(|value| value.as_str()),
-            Some("GitHub")
+            Some("Github link")
         );
         assert_eq!(
             buttons[0].get("url").and_then(|value| value.as_str()),
-            Some("https://github.com/redca")
+            Some("https://github.com/redcatekkk")
         );
     }
 
