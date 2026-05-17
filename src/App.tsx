@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState, type CSSProperties } from 'react'
 import {
-  Activity,
   AlertTriangle,
   BookOpen,
   Boxes,
@@ -605,6 +604,17 @@ function WindowButton({
   )
 }
 
+function AppLogo({ className }: { className: string }) {
+  return (
+    <img
+      src="/app-icon.png"
+      alt=""
+      className={`${className} object-cover`}
+      draggable={false}
+    />
+  )
+}
+
 function Workspace(props: {
   activePreset: Preset
   assetDraft: string
@@ -661,8 +671,8 @@ function Sidebar({
   return (
     <aside className="hidden border-r border-white/10 bg-black/24 px-3 pb-6 pt-5 lg:flex lg:flex-col">
       <div className="mb-8 flex items-center gap-3 px-2">
-        <div className="grid size-10 place-items-center rounded-2xl border border-violet-300/25 bg-violet-500/15 shadow-[0_0_28px_rgba(139,92,246,0.38)]">
-          <Activity className="size-5 text-violet-100" strokeWidth={2.2} />
+        <div className="grid size-10 place-items-center overflow-hidden rounded-2xl border border-violet-300/25 bg-violet-500/15 shadow-[0_0_28px_rgba(139,92,246,0.38)]">
+          <AppLogo className="size-full" />
         </div>
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold tracking-[-0.01em] text-white">
@@ -714,8 +724,8 @@ function TopBar({
   return (
     <header className="flex items-center justify-between gap-3 border-b border-white/10 bg-black/20 px-4 py-3 lg:hidden">
       <div className="flex min-w-0 items-center gap-3">
-        <div className="grid size-9 shrink-0 place-items-center rounded-2xl border border-violet-300/25 bg-violet-500/15">
-          <Activity className="size-4 text-violet-100" />
+        <div className="grid size-9 shrink-0 place-items-center overflow-hidden rounded-2xl border border-violet-300/25 bg-violet-500/15">
+          <AppLogo className="size-full" />
         </div>
         <div className="min-w-0">
           <p className="truncate text-sm font-semibold text-white">Presence Studio</p>
